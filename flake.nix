@@ -20,8 +20,8 @@
     in
     {
       nixosConfigurations = {
-        nixos = nixpkgs.lib.nixosSystem {
-          inherit system;
+        jimmy = nixpkgs.lib.nixosSystem {
+          # my acer book 3 or smth idk what it is
 
           specialArgs = {
             inherit inputs;
@@ -29,11 +29,9 @@
 
             ];
           };
-
           modules = [
-            ./host/hardware-configuration.nix
+            ./host/jimmy
             ./core
-            ./modules
           ];
         };
       };
