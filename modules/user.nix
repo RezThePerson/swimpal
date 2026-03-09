@@ -1,8 +1,8 @@
-{ inputs, home-manager, ... }:
+{ inputs, ... }:
 {
-  home.username = "rez";
-  home.homeDirectory = "/home/rez";
-  home.stateVersion = "26.05";
+  imports = [
+    inputs.home-manager.nixosModules.home-manager
+  ];
 
   users.users.rez = {
     isNormalUser = true;
@@ -15,7 +15,6 @@
       "tty"
       "audio"
     ];
-    packages = with pkgs; [ ];
   };
 
   home-manager = {

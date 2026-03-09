@@ -2,7 +2,7 @@
 {
   home.username = "rez";
   home.homeDirectory = "/home/rez";
-  home.stateVersion = "25.05";
+  home.stateVersion = "26.05";
 
   imports = [
     ./desktop-environment

@@ -6,7 +6,6 @@
     ./utils
     ./nixpkgs.nix
 
-    ./tuigreet.nix
     ./user.nix
   ];
 }

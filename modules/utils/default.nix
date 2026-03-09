@@ -11,6 +11,6 @@
     ./upower.nix
 
     ./warp.nix
-    ./greatd.nix
+    ./greetd.nix
   ];
 }
