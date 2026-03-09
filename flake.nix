@@ -31,7 +31,7 @@
           };
           modules = [
             ./host/jimmy
-            ./core
+            ./modules
           ];
         };
       };

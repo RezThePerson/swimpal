@@ -1,8 +1,6 @@
 {
   imports = [
     ./system.nix
-
-    ./network.nix
     ./locale.nix
 
     ./utils
