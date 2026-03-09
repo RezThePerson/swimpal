@@ -1,6 +1,6 @@
 {
   imports = [
-    ./hyperland.nix
-    ./cursor.nix
+    ./hyperland
+    ./cursor
   ];
 }
