@@ -8,6 +8,7 @@
     ./services.nix
     ./nixpkgs.nix
 
-    # ./user.nix
+    ./tuigreet.nix
+    ./user.nix
   ];
 }
