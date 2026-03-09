@@ -5,8 +5,8 @@
   home.stateVersion = "25.05";
 
   imports = [
-    ./de
-    ./tui-apps
-    ./gui-apps
+    ./desktop-environment
+    ./utils
+    ./apps
   ];
 }
