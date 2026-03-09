@@ -1,7 +1,9 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    zip
-    unzip
+    wl-clip-persist
+    grim
+    slurp
+    trash-cli
   ];
 }

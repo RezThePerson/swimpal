@@ -2,8 +2,11 @@
   imports = [
     ./shell
     ./vcs
-    ./bluetui
-    ./pulsemixer
-    ./yazi
+    ./languages
+    ./compression
+    ./clipboard-ss-and-trash
+    ./controllers
+    ./media
+    ./misc
   ];
 }

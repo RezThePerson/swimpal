@@ -4,5 +4,10 @@
     ./ghostty
     ./prismlauncher
     ./zed
+
+    ./yazi
+
+    ./bluetui
+    ./pulsemixer
   ];
 }

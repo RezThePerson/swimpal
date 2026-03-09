@@ -10,6 +10,7 @@
 
       exec-once = [
         "waybar"
+        "wl-clip-persist --clipboard regular"
       ];
     };
   };
