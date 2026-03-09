@@ -18,9 +18,6 @@
   };
 
   home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-
     users.rez = import ../home;
   };
 }

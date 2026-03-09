@@ -19,7 +19,7 @@
       lt = "eza -1 --tree --level=2 --icons";
     };
 
-    initExtra = "
+    initContent = "
       fastfetch
     ";
   };

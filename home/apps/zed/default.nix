@@ -8,7 +8,7 @@
       "Svelte"
     ];
 
-    settings = {
+    userSettings = {
       format_on_save = true;
 
       features = {
