@@ -5,7 +5,7 @@
     ./network.nix
     ./locale.nix
 
-    ./services.nix
+    ./utils
     ./nixpkgs.nix
 
     ./tuigreet.nix

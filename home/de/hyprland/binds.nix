@@ -6,7 +6,7 @@
     bind = [
       # apps
       "$mod, d, exec, rofi --show drun"
-      "$mod, return, exec, kitty"
+      "$mod, return, exec, ghostty"
 
       # window management
       "$mod, q, killactive"
