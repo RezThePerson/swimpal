@@ -6,7 +6,7 @@
 
   imports = [
     ./de
-    ./utils
     ./apps
+    ./gui-apps
   ];
 }
