@@ -6,7 +6,7 @@
 
   imports = [
     ./de
-    ./apps
+    ./tui-apps
     ./gui-apps
   ];
 }
