@@ -8,7 +8,7 @@
 
     shellAliases = {
       flex = "fastfetch";
-      rb = "sudo nixos-rebuild switch --flake ~/swimpal";
+      rb-jimmy = "sudo nixos-rebuild switch --flake ~/swimpal#jimmy";
       c = "qalc";
       y = "yazi";
 
