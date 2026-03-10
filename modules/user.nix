@@ -18,6 +18,7 @@
   };
 
   home-manager = {
+    backupFileExtension = "bak";
     users.rez = import ../home;
   };
 }
