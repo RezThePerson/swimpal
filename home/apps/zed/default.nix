@@ -9,6 +9,7 @@
       "nix"
       "astro"
       "go"
+      "wakatime"
     ];
 
     userSettings = {
