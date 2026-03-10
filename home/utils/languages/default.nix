@@ -1,7 +1,14 @@
+
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    zip
-    unzip
+    nodejs
+    python3
+    javaPackages.compiler.temurin-bin.jdk-21
+    go
+
+    gcc
+    nixd
+    nil
   ];
 }

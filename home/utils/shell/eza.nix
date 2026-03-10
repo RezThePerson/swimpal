@@ -4,6 +4,7 @@
     enableZshIntegration = true;
 
     icons = "auto";
+    extraOptions = ["--oneline"];
     theme = "catppuccin-mocha";
   };
 }
