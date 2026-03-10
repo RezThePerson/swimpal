@@ -1,5 +1,5 @@
 {
-  description = "My swimpal rice!";
+  description = "a swimpal nixos rice!";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -17,17 +17,13 @@
     }@inputs:
     let
       system = "x86_64-linux";
-    in
-    {
+    in {
       nixosConfigurations = {
         jimmy = nixpkgs.lib.nixosSystem {
           # my acer book 3 or smth idk what it is
 
           specialArgs = {
             inherit inputs;
-            modules = [
-
-            ];
           };
           modules = [
             ./host/jimmy

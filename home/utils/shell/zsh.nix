@@ -8,9 +8,12 @@
 
     shellAliases = {
       flex = "fastfetch";
-      rb-jimmy = "sudo nixos-rebuild switch --flake ~/swimpal#jimmy";
       c = "qalc";
       y = "yazi";
+
+      rb = "reboot";
+      rb-jimmy = "sudo nixos-rebuild switch --flake ~/swimpal#jimmy";
+
 
       ls = "echo 'dawg use l instead'";
       l = "eza -1 --icons";

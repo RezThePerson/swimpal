@@ -1,4 +1,4 @@
 {
   networking.networkmanager.enable = true;
-  networking.hostName = "goodboy3";
+  networking.hostName = "goodboy";
 }

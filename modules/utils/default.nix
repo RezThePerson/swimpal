@@ -9,8 +9,9 @@
 
     ./ssh.nix
     ./upower.nix
-
     ./warp.nix
     ./greetd.nix
+
+    ./trackpad.nix
   ];
 }
