@@ -6,7 +6,7 @@
     bind = [
       # apps
       "$mod, d, exec, rofi -show drun"
-      "$mod, return, exec, ghostty"
+      "$mod, return, exec, kitty"
 
       # window management
       "$mod, q, killactive"
@@ -46,6 +46,11 @@
     bindm = [
       "$mod, mouse:272, movewindow"
       "$mod, mouse:273, resizewindow"
+    ];
+
+    bindl = [
+    ", switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, preferred, auto, 1'"
+    ", switch:on:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, disable'"
     ];
   };
 }

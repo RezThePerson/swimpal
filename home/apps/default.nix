@@ -1,7 +1,7 @@
 {
   imports = [
     ./firefox
-    ./ghostty
+    ./kitty
     ./prismlauncher
     ./zed
 
