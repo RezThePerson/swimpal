@@ -6,6 +6,8 @@
 
     home-manager.url = "github:nix-community/home-manager/";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    ags.url = "github:Aylur/ags";
   };
 
   outputs =
@@ -17,7 +19,8 @@
     }@inputs:
     let
       system = "x86_64-linux";
-    in {
+    in
+    {
       nixosConfigurations = {
         sillyacerbook = nixpkgs.lib.nixosSystem {
           specialArgs = {

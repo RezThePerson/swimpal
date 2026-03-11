@@ -1,7 +1,9 @@
 {
   imports = [
-    ./hyprland
-    ./cursor
     ./fonts
+    ./cursor
+
+    ./hyprland
+    ./ags
   ];
 }
