@@ -19,14 +19,12 @@
       system = "x86_64-linux";
     in {
       nixosConfigurations = {
-        jimmy = nixpkgs.lib.nixosSystem {
-          # my acer book 3 or smth idk what it is
-
+        sillyacerbook = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit inputs;
           };
           modules = [
-            ./host/jimmy
+            ./host/sillyacerbook
             ./modules
           ];
         };

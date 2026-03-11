@@ -11,8 +11,7 @@
       c = "qalc";
       y = "yazi";
 
-      rb = "reboot";
-      rb-jimmy = "sudo nixos-rebuild switch --flake ~/swimpal#jimmy";
+      build = "sudo nixos-rebuild switch --flake ~/swimpal";
     };
 
     initContent = "
