@@ -6,15 +6,13 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-      "$mod" = "SUPER";
-
       exec-once = [
-        "waybar"
         "wl-clip-persist --clipboard regular"
+        "wl-paste --watch cliphist store"
       ];
 
       monitor = [
-      ", preferred, auto, 1"
+        ", preferred, auto, 1"
       ];
     };
   };
