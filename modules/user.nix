@@ -19,6 +19,8 @@
 
   home-manager = {
     backupFileExtension = "bak";
+    extraSpecialArgs = { inherit inputs; };
+
     users.rez = import ../home;
   };
 }
