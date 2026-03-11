@@ -1,7 +1,6 @@
+{ inputs, ... }:
 {
-  imports = [
-    ./binds.nix
-  ];
+  imports = [ inputs.ags.homeManagerModules.default ];
 
   programs.ags = {
     enable = true;
