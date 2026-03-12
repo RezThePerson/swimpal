@@ -5,7 +5,7 @@
 #### fully use nix os itself
 
 ```
-git clone github.com/RezThePerson/swimpal ~/swimpal --recurse-submodules
+git clone https://github.com/RezThePerson/swimpal.git ~/swimpal --recurse-submodules
 nixos-generate-config --show-hardware-config > ./swimpal/host/<hostname>/hardware-autogen.nix
 sudo nixos-rebuild switch --flake ~/swimpal<hostname>
 ```
