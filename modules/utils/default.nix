@@ -13,5 +13,7 @@
     ./greetd.nix
 
     ./trackpad.nix
+    
+    ./touchgrass.nix
   ];
 }

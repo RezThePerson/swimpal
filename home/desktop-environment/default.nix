@@ -5,5 +5,7 @@
 
     ./hyprland
     ./ags
+    
+    ./notif
   ];
 }
