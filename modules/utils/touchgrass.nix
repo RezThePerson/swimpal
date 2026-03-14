@@ -1,15 +1,20 @@
+{pkgs, ...}:
 {
   systemd.user.services.touchgrass = {
-    Service = {
+    description = "Touch grass reminder";
+
+    serviceConfig = {
       Type = "oneshot";
-      ExecStart = "notify-send 'Reminder' 'Touch Grass'";
+      ExecStart = "${pkgs.libnotify}/bin/notify-send 'Reminder' 'Touch Grass'";
     };
   };
 
   systemd.user.timers.touchgrass = {
-    WantedBy = [ "timers.target" ];
-    Timer = {
+    wantedBy = [ "timers.target" ];
+
+    timerConfig = {
       OnCalendar = "*:0,30";
+      Persistent = true;
     };
   };
 }

@@ -5,10 +5,9 @@
   programs.ags = {
     enable = true;
     configDir = ./ags-config;
-  };
 
-  home.packages = with pkgs; [
-    astal.astal4
-    astal.hyprland
-  ];
+    extraPackages = [
+      inputs.astal.packages.${pkgs.system}.hyprland
+    ];
+  };
 }
