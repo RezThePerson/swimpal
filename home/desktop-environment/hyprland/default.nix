@@ -9,6 +9,7 @@
       exec-once = [
         "wl-clip-persist --clipboard regular"
         "wl-paste --watch cliphist store"
+        "waybar"
       ];
 
       monitor = [

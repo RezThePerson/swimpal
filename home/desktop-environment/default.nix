@@ -4,7 +4,7 @@
     ./cursor
 
     ./hyprland
-    ./ags
+    ./waybar
     
     ./notif
   ];
