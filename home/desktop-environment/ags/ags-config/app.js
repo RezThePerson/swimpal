@@ -1,11 +1,11 @@
 import app from "ags/gtk4/app";
 import css from "./lib/styles/styles.css";
 
-import Bar from "./lib/modules/bar/Bar";
+import Border from "./lib/modules/border/Border";
 
 app.start({
   css: css,
   main() {
-    Bar();
+    Border();
   },
 });
