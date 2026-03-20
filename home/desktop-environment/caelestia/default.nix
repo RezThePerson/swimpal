@@ -1,6 +1,14 @@
-{ pkgs, inputs, ... }:
+{ inputs, pkgs, ... }:
 {
-  home.packages = [
-    inputs.caelestia-shell.packages.${pkgs.system}.with-cli
-  ];
+	imports = [
+		inputs.caelestia-shell.homeManagerModules.default
+	];
+
+	programs.caelestia = {
+		enable = true;
+
+		cli = {
+			enable = true;
+		};
+	};
 }

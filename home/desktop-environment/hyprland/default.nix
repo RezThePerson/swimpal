@@ -1,15 +1,22 @@
 {
   imports = [
     ./binds.nix
+    ./animations.nix
+    ./decoration.nix
+    ./input.nix
+    ./misc.nix
   ];
 
   wayland.windowManager.hyprland = {
     enable = true;
+
     settings = {
       exec-once = [
         "wl-clip-persist --clipboard regular"
         "wl-paste --watch cliphist store"
-        "waybar"
+        "[workspace 1 silent] firefix"
+        "[workspace 2 silent] zed"
+        "[workspace 3 silent] kitty"
       ];
 
       monitor = [

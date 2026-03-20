@@ -2,6 +2,6 @@
 {
   home.packages = with pkgs; [
     libnotify
-    dunst
+    inotify-tools
   ];
 }

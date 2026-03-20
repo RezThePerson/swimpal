@@ -4,7 +4,7 @@
     ./locale.nix
 
     ./utils
-    ./config
+    ./config.nix
     ./nixpkgs.nix
 
     ./user.nix

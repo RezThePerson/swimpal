@@ -5,18 +5,25 @@
 
     bind = [
       # apps
-      "$mod, d, exec, rofi -show drun"
+      "$mod, d, exec, global, caelestia:launcher"
       "$mod, return, exec, kitty"
 
       # window management
       "$mod, q, killactive"
       "$mod, f, togglefloating"
 
+      # clipbaord
+      "Super, V, exec, caelestia clipboard"
+      "Super+Alt, V, exec, caelestia clipboard -d"
+      
+      # emoji
+      "Super, Period, exec, caelestia emoji -p"
+
       # screenshot
-      "$mod, s, exec, grim -g \"$(slurp -w 0)\" - | wl-copy"
+      "$mod, s, global, caelestia:screenshotFreeze"
 
       # lock
-      "$mod, l, exec, hyprlock"
+      "$mod, l, global, caelestia:lock"
 
       # windows
       "$mod, 1, workspace, 1"
@@ -51,6 +58,18 @@
     bindl = [
       ", switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, preferred, auto, 1'"
       ", switch:on:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, disable'"
+
+      ", XF86MonBrightnessUp, global, caelestia:brightnessUp"
+      ", XF86MonBrightnessDown, global, caelestia:brightnessDown"
+
+      "Super, Space, global, caelestia:mediaToggle"
+      ", XF86AudioPlay, global, caelestia:mediaToggle"
+      ", XF86AudioPause, global, caelestia:mediaToggle"
+      "Super, Equal, global, caelestia:mediaNext"
+      ", XF86AudioNext, global, caelestia:mediaNext"
+      "Super, Minus, global, caelestia:mediaPrev"
+      ", XF86AudioPrev, global, caelestia:mediaPrev"
+      ", XF86AudioStop, global, caelestia:mediaStop"
     ];
   };
 }
