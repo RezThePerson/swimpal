@@ -4,7 +4,7 @@
     ./cursor
 
     ./hyprland
-    ./waybar
+    ./caelestia
     
     ./notif
   ];
