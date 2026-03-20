@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   home.packages = [
-    caelestia-shell.packages.${pkgs.system}.with-cli
+    inputs.caelestia-shell.packages.${pkgs.system}.with-cli
   ];
 }
