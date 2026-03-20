@@ -6,6 +6,7 @@
 
     ./seatd.nix
     ./dbus.nix
+    ./garbage.nix
 
     ./ssh.nix
     ./upower.nix
