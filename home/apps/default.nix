@@ -6,9 +6,5 @@
     ./zed
 
     ./yazi
-    ./rofi
-
-    ./bluetui
-    ./pulsemixer
   ];
 }
