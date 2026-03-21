@@ -9,6 +9,10 @@
   programs.caelestia = {
     enable = true;
 
+    cli = {
+      enable = true;
+    };
+
     settings = {
       appearance = {
         rounding.scale = 1;
