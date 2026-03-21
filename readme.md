@@ -8,13 +8,13 @@ a simple but not so much nixos rice
 
 1. install nix os and select no desktop.
 2. go ahead with the default settings
-3. login and run the below 
+3. login and run the below
 
 ```bash
 # installs git temporarly
-nix-shell -p git 
+nix-shell -p git
 
-# you will have to repaste the bellow due to going to a new shell 
+# you will have to repaste the bellow due to going to a new shell
 # clone the dotfiles
 git clone https://github.com/RezThePerson/swimpal.git ~/swimpal
 
@@ -31,3 +31,6 @@ sudo reboot
 4. login with the username `rez` and the default password `nixoverarch`
 5. enjoy!
 
+## Todo
+
+- [ ] add https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-mauve-git/ and more to the fire fox customization
