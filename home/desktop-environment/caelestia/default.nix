@@ -178,7 +178,7 @@
         activeWindow = {
           compact = false;
           inverted = false;
-          showOnHover = true;
+          showOnHover = false;
         };
 
         tray = {
@@ -518,7 +518,7 @@
         recolourLogo = false;
         enableFprint = true;
         maxFprintTries = 3;
-        hideNotifs = false;
+        hideNotifs = true;
       };
 
       utilities = {
