@@ -14,6 +14,7 @@
     ./greetd.nix
 
     ./trackpad.nix
+    ./hardware.nix
     
     ./touchgrass.nix
   ];

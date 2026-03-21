@@ -32,6 +32,15 @@
             ./modules
           ];
         };
+        tester = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            ./host/tester
+            ./modules
+          ];
+        };
       };
     };
 }

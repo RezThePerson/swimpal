@@ -5,9 +5,9 @@
 #### fully use nix os itself
 
 ```
-git clone https://github.com/RezThePerson/swimpal.git ~/swimpal --recurse-submodules
-nixos-generate-config --show-hardware-config > ./swimpal/host/<hostname>/hardware-autogen.nix
-sudo nixos-rebuild switch --flake ~/swimpal<hostname>
+git clone https://github.com/RezThePerson/swimpal.git ~/swimpal
+nixos-generate-config --show-hardware-config > ./swimpal/host/tester/hardware-autogen.nix
+sudo nixos-rebuild switch --flake ~/swimpal#tester
 ```
 
 #### only ags waybar, and all
