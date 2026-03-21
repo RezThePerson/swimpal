@@ -4,9 +4,12 @@
     inputs.home-manager.nixosModules.home-manager
   ];
 
+  users.mutableUsers = false;
+
   users.users.rez = {
     isNormalUser = true;
     description = "Rez";
+    initialPassword = "nixoverarch";
     extraGroups = [
       "wheel"
       "networkmanager"
