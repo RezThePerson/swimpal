@@ -5,7 +5,7 @@
 
     bind = [
       # apps
-      "$mod, d, exec, global, caelestia:launcher"
+      "$mod, d, global, caelestia:launcher"
       "$mod, return, exec, kitty"
 
       # window management
@@ -16,7 +16,7 @@
       "Super, V, exec, caelestia clipboard"
       "Super+Alt, V, exec, caelestia clipboard -d"
       
-      # emoji
+      #  emoji
       "Super, Period, exec, caelestia emoji -p"
 
       # screenshot

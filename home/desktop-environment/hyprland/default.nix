@@ -14,8 +14,8 @@
       exec-once = [
         "wl-clip-persist --clipboard regular"
         "wl-paste --watch cliphist store"
-        "[workspace 1 silent] firefix"
-        "[workspace 2 silent] zed"
+        "[workspace 1 silent] firefox"
+        "[workspace 2 silent] zeditor"
         "[workspace 3 silent] kitty"
       ];
 

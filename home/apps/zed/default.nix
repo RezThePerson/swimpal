@@ -47,7 +47,6 @@
       };
 
       disable_ai = true;
-
     };
   };
 }
