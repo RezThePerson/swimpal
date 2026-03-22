@@ -7,8 +7,9 @@ a simple but not so much nixos rice
 ### if you only want to test it ones on a vm
 
 1. install nix os and select no desktop.
-2. go ahead with the default settings
-3. login and run the below
+2. make sure to create the user directory with the username `Rez`
+3. go ahead with the default settings for the rest options
+4. login using `Rez` and the password you set, and run the below
 
 ```bash
 # installs git temporarly
@@ -28,9 +29,10 @@ sudo nixos-rebuild switch --flake ~/swimpal#tester
 sudo reboot
 ```
 
-4. login with the username `rez` and the default password `nixoverarch`
+4. login with the username `rez` and the password you set
 5. enjoy!
 
 ## Todo
 
 - [ ] add https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-mauve-git/ and more to the fire fox customization
+- [ ] asperite
