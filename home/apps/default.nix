@@ -4,6 +4,8 @@
     ./kitty
     ./prismlauncher
     ./zed
+    
+    ./aseprite
 
     ./yazi
   ];

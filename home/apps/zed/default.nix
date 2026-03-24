@@ -10,6 +10,7 @@
       "astro"
       "go"
       "wakatime"
+      "codebook"
     ];
 
     userSettings = {
