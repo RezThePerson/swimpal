@@ -8,6 +8,7 @@
 
     shellAliases = {
       flex = "fastfetch";
+      ws = "wishlist";
       c = "qalc";
       y = "yazi";
 
