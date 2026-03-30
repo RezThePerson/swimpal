@@ -4,12 +4,11 @@
 
     settings = {
       logo = {
-        type = "builtin";
-        source = "auto-small";
+        type = "small";
         padding = {
-          top = 0;
-          left = 1;
-          right = 2;
+          top = 2;
+          left = 2;
+          right = 3;
         };
       };
 
@@ -30,6 +29,13 @@
           key = "├─ ";
           keyColor = "#ca9ee6";
           format = "{1}";
+        }
+
+        {
+          type = "packages";
+          key = "├─󰏖 ";
+          keyColor = "#ca9ee6";
+          format = "{1} Total Packages";
         }
 
         {
@@ -56,10 +62,10 @@
         }
 
         {
-          type = "packages";
-          key = "├─󰏖 ";
+          type = "disk";
+          key = "├─ ";
           keyColor = "#ca9ee6";
-          format = "{1} Total Packages";
+          format = "{1}/{2} ({3})";
         }
 
         {
