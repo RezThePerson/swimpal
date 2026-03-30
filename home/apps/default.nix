@@ -9,5 +9,6 @@
 
     ./yazi
     ./fastfetch
+    ./wishlist
   ];
 }
