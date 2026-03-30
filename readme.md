@@ -8,9 +8,9 @@ The DE itself mostly uses the [Caelestia dots](https://github.com/caelestia-dots
 
 ## Gallery
 
-| ![]() |     |
+| ![](https://cdn.hackclub.com/019d3d38-a21b-72c3-b2d6-9a7095bd5cef/image.png) | ![](https://cdn.hackclub.com/019d3d39-2751-76f7-8dcf-b18887964af8/image.png)    |
 | ----- | --- |
-|       |     |
+|   ![](https://cdn.hackclub.com/019d3d55-12fa-71d7-81db-93df5033cad6/image.png)    |  ![](https://cdn.hackclub.com/019d3d39-89f7-770f-94ae-c0f07190f50d/image.png)   |
 
 ## Try it out (In a VM)
 
