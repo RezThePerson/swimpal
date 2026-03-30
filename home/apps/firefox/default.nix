@@ -45,10 +45,10 @@
       EncryptedMediaExtensions.Enabled = true;
 
       ExtensionSettings = {
-        "adguardadblocker@adguard.com" = {
+        "uBlock0@raymondhill.net" = {
           default_area = "menupanel";
           installation_mode = "normal_installed";
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/adguard-adblocker/latest.xpi";
+          install_url = "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/latest.xpi";
           private_browsing = true;
         };
 
@@ -129,7 +129,7 @@
         "browser.newtabpage.activity-stream.topSitesRows" = 2;
         "browser.tabs.firefox-view" = false;
         "browser.tabs.tabmanager.enabled" = false;
-        "browser.uidensity" = 1;
+        "browser.uidensity" = 2;
 
         "browser.uiCustomization.state" = builtins.toJSON {
           placements = {
@@ -138,8 +138,8 @@
               "forward-button"
               "stop-reload-button"
               "urlbar-container"
-              "unified-extensions-button"
               "downloads-button"
+              "unified-extensions-button"
             ];
             TabsToolbar = [ "tabbrowser-tabs" ];
           };
@@ -177,7 +177,7 @@
       ];
 
       SearchSuggestEnabled = false;
-      ShowHomeButton = true;
+      ShowHomeButton = false;
       SkipTermsOfUse = true;
       TranslateEnabled = true;
 
