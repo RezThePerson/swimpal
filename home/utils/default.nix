@@ -4,6 +4,7 @@
     ./vcs
     ./languages
     ./compression
+    ./notif
     ./clipboard-ss-and-trash
     ./controllers
     ./media

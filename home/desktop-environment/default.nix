@@ -5,7 +5,5 @@
 
     ./hyprland
     ./caelestia
-    
-    ./notif
   ];
 }
