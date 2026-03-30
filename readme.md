@@ -1,6 +1,6 @@
 # swimpal
 
-A simple but not so much NixOS rice.
+My simple but yet not so much NixOS rice.
 
 ## Try it out
 
