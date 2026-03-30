@@ -24,7 +24,7 @@ git clone https://github.com/RezThePerson/swimpal.git ~/swimpal
 nixos-generate-config --show-hardware-config > ./swimpal/host/tester/hardware-autogen.nix
 
 # Rebuild system (this may take ~30 minutes)
-sudo nixos-rebuild switch --flake ~/swimpal#tester
+sudo nixos-rebuild switch --extra-experimental-features "nix-command flakes" --flake ~/swimpal#tester
 
 # Reboot to apply changes
 sudo reboot
