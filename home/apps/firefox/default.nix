@@ -53,6 +53,7 @@
         };
 
         "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
+          default_area = "navbar";
           installation_mode = "normal_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
         };
@@ -129,7 +130,6 @@
         "browser.newtabpage.activity-stream.topSitesRows" = 2;
         "browser.tabs.firefox-view" = false;
         "browser.tabs.tabmanager.enabled" = false;
-        "browser.uidensity" = 2;
 
         "browser.uiCustomization.state" = builtins.toJSON {
           placements = {
