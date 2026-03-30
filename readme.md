@@ -2,9 +2,7 @@
 
 My simple but yet not so much NixOS rice.
 
-## Try it out
-
-### If you just want to test it in a VM
+## Try it out (In a VM)
 
 1. Install [NixOS](https://nixos.org/download/#nixos-iso) and select "no desktop environment".
 2. Make sure to create a user with the username `rez`.
