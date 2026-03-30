@@ -5,7 +5,7 @@
     nodejs
     bun
     python3
-    javaPackages.compiler.temurin-bin.jdk-21
+    javaPackages.compiler.temurin-bin.jdk-25
     go
 
     gcc

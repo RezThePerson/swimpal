@@ -1,38 +1,39 @@
 # swimpal
 
-a simple but not so much nixos rice
+A simple but not so much NixOS rice.
 
 ## Try it out
 
-### if you only want to test it ones on a vm
+### If you just want to test it in a VM
 
-1. install nix os and select no desktop.
-2. make sure to create the user directory with the username `Rez`
-3. go ahead with the default settings for the rest options
-4. login using `Rez` and the password you set, and run the below
+1. Install [NixOS](https://nixos.org/download/#nixos-iso) and select "no desktop environment".
+2. Make sure to create a user with the username `rez`.
+3. Continue with the default settings for the remaining options.
+4. Log in as `rez` using the password you set, then run:
 
 ```bash
-# installs git temporarly
+# Install git temporarily
 nix-shell -p git
 
-# you will have to repaste the bellow due to going to a new shell
-# clone the dotfiles
+# You'll need to paste the next commands again because this opens a new shell
+
+# Clone the dotfiles
 git clone https://github.com/RezThePerson/swimpal.git ~/swimpal
 
-# load the local hardware configs
+# Generate hardware config
 nixos-generate-config --show-hardware-config > ./swimpal/host/tester/hardware-autogen.nix
 
-# rebuild and wait for about 15mins for it to install everything
+# Rebuild system (this may take ~30 minutes)
 sudo nixos-rebuild switch --flake ~/swimpal#tester
 
-# time to try it
+# Reboot to apply changes
 sudo reboot
 ```
 
-4. login with the username `rez` and the password you set
-5. enjoy!
+5. Log back in with the username `rez` and your password.
+6. Enjoy.
 
 ## Todo
 
-- [ ] add https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-mauve-git/ and more to the fire fox customization
-- [ ] asperite
+- [ ] Add Firefox customizations, including:
+  - [https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-mauve-git](https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-mauve-git)
