@@ -2,6 +2,16 @@
 
 My simple but yet not so much NixOS rice.
 
+## Info
+
+The DE itself mostly uses the [Caelestia dots](https://github.com/caelestia-dots/shell), but I still spent a decent amount of time putting everything together the way I like it.
+
+## Gallery
+
+| ![]() |     |
+| ----- | --- |
+|       |     |
+
 ## Try it out (In a VM)
 
 1. Install [NixOS](https://nixos.org/download/#nixos-iso) and select "no desktop environment".

@@ -8,5 +8,6 @@
     ./aseprite
 
     ./yazi
+    ./fastfetch
   ];
 }
