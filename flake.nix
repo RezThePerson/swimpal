@@ -25,7 +25,7 @@
       nixosConfigurations = {
         sillyacerbook = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit inputs;
+            inherit inputs system;
           };
           modules = [
             ./host/sillyacerbook
@@ -34,7 +34,7 @@
         };
         tester = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit inputs;
+            inherit inputs system;
           };
           modules = [
             ./host/tester
