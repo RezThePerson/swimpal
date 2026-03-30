@@ -9,5 +9,6 @@
     ./controllers
     ./media
     ./misc
+    ./ssh
   ];
 }
