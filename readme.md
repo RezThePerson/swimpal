@@ -32,8 +32,3 @@ sudo reboot
 
 5. Log back in with the username `rez` and your password.
 6. Enjoy.
-
-## Todo
-
-- [ ] Add Firefox customizations, including:
-  - [https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-mauve-git](https://addons.mozilla.org/en-US/firefox/addon/catppuccin-mocha-mauve-git)
