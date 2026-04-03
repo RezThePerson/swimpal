@@ -8,7 +8,7 @@
 
     shellAliases = {
       flex = "fastfetch";
-      ws = "wishlist";
+      lsh = "lazyssh";
       c = "qalc";
       y = "yazi";
 
