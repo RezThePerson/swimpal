@@ -94,7 +94,6 @@
 
       GenerativeAI.Enabled = false;
       HardwareAcceleration = true;
-      HttpsOnlyMode = "enabled";
 
       InstallAddonsPermission = {
         Default = false;
@@ -109,16 +108,6 @@
       OverridePostUpdatePage = "";
 
       PasswordManagerEnabled = false;
-
-      Permissions = {
-        Autoplay.Default = "block-audio";
-        Camera.BlockNewRequests = true;
-        Location.BlockNewRequests = true;
-        Microphone.BlockNewRequests = true;
-        Notifications.BlockNewRequests = true;
-        ScreenShare.BlockNewRequests = true;
-        VirtualReality.BlockNewRequests = true;
-      };
 
       PictureInPicture.Enabled = false;
       PopupBlocking.Default = true;
@@ -147,14 +136,6 @@
         };
 
         "sidebar.verticalTabs" = true;
-        "general.autoScroll" = true;
-        "gfx.webrender.all" = true;
-        "media.ffmpeg.vaapi.enabled" = true;
-        "media.hardware-video-decoding.force-enabled" = true;
-        "media.peerconnection.enabled" = false;
-        "privacy.globalprivacycontrol.enabled" = true;
-        "widget.dmabuf.force-enabled" = true;
-
         "extensions.activeThemeID" = "{76aabc99-c1a8-4c1e-832b-d4f2941d5a7a}";
       };
 
