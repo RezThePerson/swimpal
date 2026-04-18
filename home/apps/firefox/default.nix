@@ -27,12 +27,6 @@
       DisplayBookmarksToolbar = "never";
       DisplayMenuBar = "default-off";
 
-      DNSOverHTTPS = {
-        Enabled = true;
-        Fallback = false;
-        ProviderURL = "https://cloudflare-dns.com/dns-query";
-      };
-
       EnableTrackingProtection = {
         Category = "strict";
         Cryptomining = true;

@@ -4,8 +4,10 @@
     ./locale.nix
 
     ./utils
-    ./config.nix
     ./nixpkgs.nix
+
+    ./bootloader.nix
+    ./powerbutton.nix
 
     ./user.nix
   ];
