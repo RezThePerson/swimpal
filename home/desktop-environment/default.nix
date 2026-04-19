@@ -4,6 +4,11 @@
     ./cursor
 
     ./hyprland
-    ./caelestia
+    ./hyprlock
+    
+    ./rofi
+    ./dunst
+    
+    ./waybar
   ];
 }

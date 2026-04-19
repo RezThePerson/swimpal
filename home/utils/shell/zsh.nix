@@ -11,6 +11,7 @@
       lsh = "lazyssh";
       c = "qalc";
       y = "yazi";
+      audiotui = "pulsemixer";
 
       build = "sudo nixos-rebuild switch --flake ~/swimpal";
     };

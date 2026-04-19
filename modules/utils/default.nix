@@ -15,7 +15,6 @@
 
     ./trackpad.nix
     ./hardware.nix
-    
-    ./touchgrass.nix
+
   ];
 }

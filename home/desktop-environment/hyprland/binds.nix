@@ -1,11 +1,10 @@
-{ ... }:
 {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
 
     bind = [
       # apps
-      "$mod, d, global, caelestia:launcher"
+      "$mod, d, exec, rofi -show drun"
       "$mod, return, exec, kitty"
 
       # window management
@@ -13,17 +12,14 @@
       "$mod, f, togglefloating"
 
       # clipbaord
-      "Super, V, exec, caelestia clipboard"
-      "Super+Alt, V, exec, caelestia clipboard -d"
-      
-      #  emoji
-      "Super, Period, exec, caelestia emoji -p"
+      "Super, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy && wl-paste"
 
       # screenshot
-      "$mod, s, global, caelestia:screenshotFreeze"
+      "$mod, s, exec, grim -g \"$(slurp)\" - | wl-copy"
 
       # lock
-      "$mod, l, global, caelestia:lock"
+      "$mod, l, exec, hyprlock"
+      ", XF86PowerOff, exec, hyprlock"
 
       # windows
       "$mod, 1, workspace, 1"
@@ -59,17 +55,26 @@
       ", switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, preferred, auto, 1'"
       ", switch:on:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, disable'"
 
-      ", XF86MonBrightnessUp, global, caelestia:brightnessUp"
-      ", XF86MonBrightnessDown, global, caelestia:brightnessDown"
+      "Super, up, exec, wpctl set-volume @DEFAULT_SINK@ 5%+"
+      "Super, down, exec, wpctl set-volume @DEFAULT_SINK@ 5%-"
 
-      "Super, Space, global, caelestia:mediaToggle"
-      ", XF86AudioPlay, global, caelestia:mediaToggle"
-      ", XF86AudioPause, global, caelestia:mediaToggle"
-      "Super, Equal, global, caelestia:mediaNext"
-      ", XF86AudioNext, global, caelestia:mediaNext"
-      "Super, Minus, global, caelestia:mediaPrev"
-      ", XF86AudioPrev, global, caelestia:mediaPrev"
-      ", XF86AudioStop, global, caelestia:mediaStop"
+      ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%+"
+      ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%-"
+
+      "Super, minus, exec, brightnessctl s +5%"
+      "Super, equal, exec, brightnessctl s -5%"
+
+      ", XF86MonBrightnessUp, exec, brightnessctl s +5%"
+      ", XF86MonBrightnessDown, exec, brightnessctl s -5%"
+
+      "Super, space, exec, playerctl play-pause"
+      "Super, left, exec, playerctl previous"
+      "Super, right, exec, playerctl next"
+
+      ", XF86AudioPlay, exec, playerctl play-pause"
+      ", XF86AudioPause, exec, playerctl play-pause"
+      ", XF86AudioPrev, exec, playerctl previous"
+      ", XF86AudioNext, exec, playerctl next"
     ];
   };
 }
