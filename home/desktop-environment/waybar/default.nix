@@ -1,5 +1,5 @@
 {
-  import = [
+  imports = [
     ./theme.nix
     ./styles.nix
   ];
