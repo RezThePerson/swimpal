@@ -4,24 +4,18 @@
     enable = true;
 
     terminal = "kitty";
-    font = "JetBrainsMono Nerd Font";
-    location = 0;
+    font = "JetBrainsMono Nerd Font 12";
+    location = "center";
 
     modes = [
-      "run"
       "drun"
-      "window"
     ];
 
     extraConfig = {
       show-icons = true;
-      drun-display-format = "{icon} {name}";
+      drun-display-format = "{icon}  {name}";
       disable-history = false;
       hide-scrollbar = true;
-      display-drun = "   Apps ";
-      display-run = "   Run ";
-      display-window = " 󰕰  Window ";
-      sidebar-mode = true;
     };
 
     theme =
@@ -30,22 +24,28 @@
       in
       {
         "*" = {
-          bg = mkLiteral "#1e1e2e";
-          fg = mkLiteral "#45475a";
+          background-color = mkLiteral "#1e1e2e";
+          foreground-color = mkLiteral "#cdd6f4";
+          text-color = mkLiteral "#cdd6f4";
           highlight = mkLiteral "#cba6f7";
         };
 
+        element = {
+          orientation = "vertical";
+          spacing = 2;
+          margin = mkLiteral "0px 0px 5px 0px";
+        };
+
         window = {
-          width = mkLiteral "30%";
+          width = mkLiteral "40%";
           border = 2;
           border-radius = 12;
-          padding = 20;
-          background-color = mkLiteral "@bg";
+          padding = 10;
+          background-color = mkLiteral "@background-color";
         };
 
         inputbar = {
           children = map mkLiteral [
-            "prompt"
             "entry"
           ];
         };
@@ -57,19 +57,20 @@
 
         entry = {
           placeholder = "Search...";
+          text-color = mkLiteral "@highlight";
         };
 
         listview = {
-          lines = 8;
+          lines = 10;
         };
 
         "element selected" = {
           background-color = mkLiteral "@highlight";
-          text-color = mkLiteral "@bg";
+          text-color = mkLiteral "#1e1e2e";
         };
 
         "element-icon" = {
-          size = 40;
+          size = 20;
         };
       };
   };

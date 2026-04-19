@@ -12,8 +12,11 @@
       "$mod, f, togglefloating"
 
       # clipbaord
-      "Super, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy && wl-paste"
-
+      "Super, v, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy && wl-paste | wtype -"
+      
+      # picker
+      "Super, p, exec, hyprpicker | wl-copy"
+      
       # screenshot
       "$mod, s, exec, grim -g \"$(slurp)\" - | wl-copy"
 

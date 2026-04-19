@@ -6,6 +6,7 @@
     ./hyprland
     ./hyprlock
     
+    ./assets
     ./hyprpaper
     
     ./rofi

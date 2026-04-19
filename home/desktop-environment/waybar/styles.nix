@@ -7,11 +7,11 @@
       }
 
       window#waybar {
-        background-color: alpha(@base, 0.75);
+        background-color: alpha(#fff, 0);
       }
 
       #workspaces {
-        background-color: alpha(@surface0, 0.75);
+        background-color: alpha(@surface0, 1);
         border-radius: 20px;
         margin: 5px;
       }
@@ -34,15 +34,15 @@
 
       #workspaces button:hover {
         transition: none;
-        background: alpha(@surface1, 0.75);
+        background: alpha(@surface1, 1);
       }
 
       #workspaces button.active {
-        background-color: alpha(@mauve, 0.75);
+        background-color: alpha(@mauve, 1);
       }
 
       #clock, #info {
-        background-color: alpha(@surface0, 0.75);
+        background-color: alpha(@surface0, 1);
         border-radius: 20px;
         margin: 5px;
         padding: 10px 0px;
