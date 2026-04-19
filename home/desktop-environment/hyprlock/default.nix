@@ -9,7 +9,7 @@
 
       background = {
         monitor = "";
-        path = ../assets/wallpaper.png;
+        path = ".wallpaper.png";
         blur_passes = 2;
         blur_size = 4;
       };
@@ -51,7 +51,7 @@
 
       image = {
         monitor = "";
-        path = ../assets/face.png;
+        path = ".face.png";
         size = 100;
         border_color = "rgb(f5c2e7)";
         position = "0, 75";

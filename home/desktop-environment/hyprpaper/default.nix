@@ -1,17 +1,16 @@
 {
-
-  programs.hyprpaper = {
+  services.hyprpaper = {
     enable = true;
 
     settings = {
       wallpaper = [
         {
           monitor = "DP-1";
-          path = ./assets/wallpaper.png;
+          path = ".wallpaper.png";
         }
         {
           monitor = "eDP-1";
-          path = ./assets/wallpaper.png;
+          path = ".wallpaper.png";
         }
       ];
     };
