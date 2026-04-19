@@ -12,6 +12,7 @@
 
     settings = {
       exec-once = [
+        "hyprlock"
         "wl-clip-persist --clipboard regular"
         "wl-paste --watch cliphist store"
         "waybar"
