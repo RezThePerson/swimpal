@@ -6,6 +6,8 @@
     ./hyprland
     ./hyprlock
     
+    ./hyprpaper
+    
     ./rofi
     ./dunst
     
