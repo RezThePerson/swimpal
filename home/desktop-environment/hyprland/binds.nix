@@ -61,11 +61,11 @@
       "Super, up, exec, wpctl set-volume @DEFAULT_SINK@ 5%+ && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
       "Super, down, exec, wpctl set-volume @DEFAULT_SINK@ 5%- && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
 
-      ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%+ && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
+      ", XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%+ && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
       ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%- && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
 
-      "Super, minus, exec, brightnessctl s 5%+ && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
-      "Super, equal, exec, brightnessctl s 15%- && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
+      "Super, minus, exec, brightnessctl s 5%- && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
+      "Super, equal, exec, brightnessctl s 5%+ && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
 
       ", XF86MonBrightnessUp, exec, brightnessctl s 5%+ && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
       ", XF86MonBrightnessDown, exec, brightnessctl s 5%- && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""

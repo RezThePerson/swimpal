@@ -11,7 +11,6 @@
       {
         position = "left";
         layer = "top";
-        width = 45;
 
         modules-left = [ "hyprland/workspaces" ];
         "hyprland/workspaces" = {
@@ -24,13 +23,6 @@
             "4" = [ ];
             "5" = [ ];
           };
-          sort-by-number = true;
-        };
-
-        modules-center = [ "hyprland/window" ];
-        "hyprland/window" = {
-          rotate = 90;
-          max-length = 50;
         };
 
         modules-right = [
