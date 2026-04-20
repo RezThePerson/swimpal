@@ -15,7 +15,6 @@
         "hyprlock"
         "wl-clip-persist --clipboard regular"
         "wl-paste --watch cliphist store"
-        "waybar"
         "[workspace 1 silent] firefox"
         "[workspace 2 silent] zeditor"
         "[workspace 3 silent] kitty"

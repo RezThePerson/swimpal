@@ -12,6 +12,8 @@
     ./rofi
     ./dunst
     
+    ./hypridle
+    
     ./waybar
   ];
 }

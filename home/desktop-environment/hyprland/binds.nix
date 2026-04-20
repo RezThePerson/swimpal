@@ -13,10 +13,10 @@
 
       # clipbaord
       "Super, v, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy && wl-paste --no-newline | wtype -"
-      
+
       # picker
       "Super, p, exec, hyprpicker | wl-copy"
-      
+
       # screenshot
       "$mod, s, exec, grim -g \"$(slurp)\" - | wl-copy"
 
@@ -58,17 +58,17 @@
       ", switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, preferred, auto, 1'"
       ", switch:on:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, disable'"
 
-      "Super, up, exec, wpctl set-volume @DEFAULT_SINK@ 5%+"
-      "Super, down, exec, wpctl set-volume @DEFAULT_SINK@ 5%-"
+      "Super, up, exec, wpctl set-volume @DEFAULT_SINK@ 5%+ && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
+      "Super, down, exec, wpctl set-volume @DEFAULT_SINK@ 5%- && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
 
-      ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%+"
-      ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%-"
+      ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%+ && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
+      ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%- && notify-send 'Volume' \"$(wpctl get-volume @DEFAULT_SINK@ | awk '{print int($2*100) \"%\"}')\""
 
-      "Super, minus, exec, brightnessctl s +5%"
-      "Super, equal, exec, brightnessctl s -5%"
+      "Super, minus, exec, brightnessctl s 5%+ && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
+      "Super, equal, exec, brightnessctl s 15%- && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
 
-      ", XF86MonBrightnessUp, exec, brightnessctl s +5%"
-      ", XF86MonBrightnessDown, exec, brightnessctl s -5%"
+      ", XF86MonBrightnessUp, exec, brightnessctl s 5%+ && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
+      ", XF86MonBrightnessDown, exec, brightnessctl s 5%- && notify-send 'Brightness' \"$(brightnessctl -m | cut -d, -f4)\""
 
       "Super, space, exec, playerctl play-pause"
       "Super, left, exec, playerctl previous"
