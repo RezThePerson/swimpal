@@ -2,9 +2,11 @@
   programs.git = {
     enable = true;
 
-    settings.user = {
-      Email = "reztheperson@proton.me";
-      Name = "RezThePerson";
+    settings = {
+      init.defaultBranch = "main";
+
+      user.email = "reztheperson@proton.me";
+      user.name = "Rez";
     };
   };
 
